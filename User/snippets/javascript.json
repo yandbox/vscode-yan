@@ -1,0 +1,335 @@
+{
+  /*
+   // Place your snippets for JavaScript here. Each snippet is defined under a snippet name and has a prefix, body and
+   // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+   // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+   // same ids are connected.
+   // Example:
+   "Print to console": {
+    "prefix": "log",
+    "body": [
+      "console.log('$1');",
+      "$2"
+    ],
+    "description": "Log output to console"
+  }
+*/
+  /**
+   * Language
+   */
+  "use strict": {
+    "prefix": "us",
+    "body": [
+      "'use strict'$0"
+    ],
+    "description": "use strict"
+  },
+  "foreach": {
+    "prefix": "foreach",
+    "body": [
+      "forEach(${1:i})"
+    ],
+    "description": "forEach"
+  },
+  "for loop": {
+    "prefix": "fv",
+    "body": [
+      "for (var ${1:i} = 0; ${1:i} < ${2}.length; ${1:i}++) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "for loop"
+  },
+  "for of": {
+    "prefix": "fof",
+    "body": [
+      "for (const ${1} of ${2}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "for of"
+  },
+  "switch case": {
+    "prefix": "sw",
+    "body": [
+      "switch ($1) {",
+      "\tcase $2:",
+      "\t\t$0",
+      "\t\tbreak",
+      "\tcase :",
+      "\t\t",
+      "\t\tbreak",
+      "}"
+    ],
+    "description": "switch case"
+  },
+  "try catch": {
+    "prefix": "trycatch",
+    "body": [
+      "try {",
+      "\t$0",
+      "} catch (err) {",
+      "\t//",
+      "}"
+    ],
+    "description": "try catch"
+  },
+  "named function": {
+    "prefix": "nf",
+    "body": [
+      "function ${1:methodName}(${2}) {",
+      "\t${3:}",
+      "}"
+    ],
+    "description": "named function"
+  },
+  "anonymous function": {
+    "prefix": "af",
+    "body": [
+      "function ($1) {",
+      "\t${2:}",
+      "}"
+    ],
+    "description": "anonymous function"
+  },
+  "arrow function": {
+    "prefix": "arf",
+    "body": [
+      "($1) => {",
+      "\t${2:}",
+      "}"
+    ],
+    "description": "arrow function"
+  },
+  "immediately-invoked function expression": {
+    "prefix": "iife",
+    "body": [
+      "(function () {",
+      "\t${1:}",
+      "})()"
+    ],
+    "description": "immediately-invoked function expression"
+  },
+  "Object.defineProperty": {
+    "prefix": "dp",
+    "body": [
+      "Object.defineProperty(${1:obj}, ${2:key}, {",
+      "\tvalue: ${3:value},",
+      "\twritable: false,",
+      "\tenumerable: false,",
+      "\tconfigurable: false",
+      "}"
+    ],
+    "description": "Object.defineProperty"
+  },
+  "new Promise": {
+    "prefix": "np",
+    "body": [
+      "new Promise((resolve, reject) => {",
+      "\t$0",
+      "})"
+    ],
+    "description": "new Promise()"
+  },
+  /**
+   * DOM
+   */
+  "querySelector": {
+    "prefix": "qs",
+    "body": [
+      "querySelector('${2:selector}')"
+    ],
+    "description": "querySelector"
+  },
+  "querySelectorAll": {
+    "prefix": "qsa",
+    "body": [
+      "querySelectorAll('${2:selector}')"
+    ],
+    "description": "querySelectorAll"
+  },
+  "previousSibling": {
+    "prefix": "ps",
+    "body": [
+      "previousSibling"
+    ],
+    "description": "previousSibling"
+  },
+  "nextSibling": {
+    "prefix": "ns",
+    "body": [
+      "nextSibling"
+    ],
+    "description": "nextSibling"
+  },
+  "childElementCount": {
+    "prefix": "cec",
+    "body": [
+      "childElementCount"
+    ],
+    "description": "childElementCount"
+  },
+  "firstElementChild": {
+    "prefix": "fec",
+    "body": [
+      "firstElementChild"
+    ],
+    "description": "firstElementChild"
+  },
+  "lastElementChild": {
+    "prefix": "lec",
+    "body": [
+      "lastElementChild"
+    ],
+    "description": "lastElementChild"
+  },
+  "previousElementSibling": {
+    "prefix": "pes",
+    "body": [
+      "previousElementSibling"
+    ],
+    "description": "previousElementSibling"
+  },
+  "nextElementSibling": {
+    "prefix": "nes",
+    "body": [
+      "nextElementSibling"
+    ],
+    "description": "nextElementSibling"
+  },
+  "createElement": {
+    "prefix": "cel",
+    "body": [
+      "${1:document}.createElement(${1:elem})"
+    ],
+    "description": "createElement"
+  },
+  "createDocumentFragment": {
+    "prefix": "cdf",
+    "body": [
+      "${1:document}.createDocumentFragment()"
+    ],
+    "description": "createDocumentFragment"
+  },
+  "appendChild": {
+    "prefix": "ac",
+    "body": [
+      "appendChild(${1:elem})"
+    ],
+    "description": "appendChild"
+  },
+  "removeChild": {
+    "prefix": "rc",
+    "body": [
+      "removeChild(${1:elem})"
+    ],
+    "description": "removeChild"
+  },
+  "getAttribute": {
+    "prefix": "ga",
+    "body": [
+      "getAttribute('${2:attr}')"
+    ],
+    "description": "getAttribute"
+  },
+  "setAttribute": {
+    "prefix": "sa",
+    "body": [
+      "setAttribute('${2:attr}', ${3:value})"
+    ],
+    "description": "setAttribute"
+  },
+  "removeAttribute": {
+    "prefix": "ra",
+    "body": [
+      "removeAttribute('${2:attr}')"
+    ],
+    "description": "removeAttribute"
+  },
+  "addEventListener": {
+    "prefix": "ae",
+    "body": [
+      "addEventListener('${2:DOMContentLoaded}', function (event) {",
+      "\t${0:// body}",
+      "})"
+    ],
+    "description": "addEventListener"
+  },
+  "DOMContentLoaded": {
+    "prefix": "dcl",
+    "body": [
+      "DOMContentLoaded"
+    ],
+    "description": "DOMContentLoaded event"
+  },
+  "getBoundingClientRect": {
+    "prefix": "gbcr",
+    "body": [
+      "getBoundingClientRect()"
+    ],
+    "description": "getBoundingClientRect"
+  },
+  /**
+   * node.js
+   */
+  "shebang": {
+    "prefix": "shb",
+    "body": [
+      "#!/usr/bin/env node",
+      "$0"
+    ],
+    "description": "shell shebang"
+  },
+  "const require": {
+    "prefix": "creq",
+    "body": [
+      "const $1 = require('$2')$0"
+    ],
+    "description": "const m = require('m')"
+  },
+  /**
+   * Chrome extension
+   */
+  "chrome.runtime.onMessage": {
+    "prefix": "crxrom",
+    "body": [
+      "chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {",
+      "\t$0",
+      "})"
+    ],
+    "description": "chrome.runtime.onMessage"
+  },
+  "chrome.browserAction.onClicked": {
+    "prefix": "crxbaoc",
+    "body": [
+      "chrome.browserAction.onClicked.addListener(tab => {",
+      "\t$0",
+      "})"
+    ],
+    "description": "chrome.browserAction.onClicked"
+  },
+  /**
+   * ESLint
+   */
+  "eslint-disable-line": {
+    "prefix": "esldl",
+    "body": [
+      "// eslint-disable-line"
+    ],
+    "description": "eslint-disable-line"
+  },
+  "eslint-disable-next-line": {
+    "prefix": "esldnl",
+    "body": [
+      "// eslint-disable-next-line"
+    ],
+    "description": "eslint-disable-next-line"
+  },
+  "eslint-disable": {
+    "prefix": "esld",
+    "body": [
+      "/* eslint-disable $1*/"
+    ],
+    "description": "eslint-disable"
+  }
+}

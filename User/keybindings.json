@@ -1,0 +1,17 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  {
+    "key": "ctrl+j",
+    "command": "editor.action.joinLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+oem_4",
+    "command": "editor.emmet.action.matchTag"
+  },
+  {
+    "key": "f10",
+    "command": "extension.runner.start",
+    "when": "editorTextFocus && !inDebugMode"
+  }
+]

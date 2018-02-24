@@ -1,0 +1,11 @@
+{
+  "function": {
+    "prefix": "function",
+    "body": [
+      "function () {",
+      "\t$0",
+      "}"
+    ],
+    "description": "function () {}"
+  }
+}

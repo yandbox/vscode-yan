@@ -1,0 +1,115 @@
+{
+/*
+	// Place your snippets for VBScript here. Each snippet is defined under a snippet name and has a prefix, body and
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+	// same ids are connected.
+	// Example:
+	"Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	}
+*/
+	"if": {
+		"prefix": "if",
+		"body": [
+			"If ${1:condition} Then",
+			"\t$0",
+			"End If"
+		],
+		"description": "If...Then"
+	},
+	"elseif": {
+		"prefix": "elseif",
+		"body": [
+			"ElseIf ${1:condition} Then",
+			"\t$2",
+			"Else"
+		],
+		"description": "ElseIf...Then"
+	},
+	"for": {
+		"prefix": "for",
+		"body": [
+			"For ${1:i} = ${2:0} To ${3:3}",
+			"\t$0",
+			"Next"
+		],
+		"description": "For...Next"
+	},
+	"foreach": {
+		"prefix": "fore",
+		"body": [
+			"For Each ${1:element} In ${2:group}",
+			"\t$0",
+			"Next"
+		],
+		"description": "For Each...Next"
+	},
+	"while": {
+		"prefix": "while",
+		"body": [
+			"Do While ${1:condition}",
+			"\t$2",
+			"Loop"
+		],
+		"description": "Do...Loop While"
+	},
+	"sub": {
+		"prefix": "sub",
+		"body": [
+			"Sub ${1:name}(${2})",
+			"\t$0",
+			"End Sub"
+		],
+		"description": "Sub procedure"
+	},
+	"func": {
+		"prefix": "func",
+		"body": [
+			"Function ${1:name}(${2})",
+			"\t$0",
+			"End Function"
+		],
+		"description": "Function procedure"
+	},
+	"echo": {
+		"prefix": "echo",
+		"body": [
+			"WScript.Echo "
+		],
+		"description": "WScript.Echo"
+	},
+	"quit": {
+		"prefix": "quit",
+		"body": [
+			"WScript.Quit "
+		],
+		"description": "WScript.Quit"
+	},
+	"err1": {
+		"prefix": "err1",
+		"body": [
+			"On Error Resume Next"
+		],
+		"description": "On Error Resume Next"
+	},
+	"err0": {
+		"prefix": "err0",
+		"body": [
+			"On Error GoTo 0"
+		],
+		"description": "On Error GoTo 0"
+	},
+	"sfso": {
+		"prefix": "sfso",
+		"body": [
+			"Set fso = Wscript.CreateObject(\"Scripting.FileSystemObject\")"
+		],
+		"description": "Set fso"
+	}
+}

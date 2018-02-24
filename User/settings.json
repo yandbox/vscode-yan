@@ -1,0 +1,122 @@
+{
+    "editor.fontFamily": "'Source Code Pro', Consolas, monospace",
+    "editor.fontSize": 16,
+    "editor.rulers": [
+        80
+    ],
+    "editor.wordWrap": "off",
+    "editor.dragAndDrop": true,
+    "editor.snippetSuggestions": "top",
+    "editor.minimap.enabled": false,
+    "editor.renderIndentGuides": false,
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "all",
+    "files.encoding": "utf8",
+    "files.eol": "\n",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.autoSave": "onWindowChange",
+    "files.defaultLanguage": "html",
+    "files.exclude": {
+        "**/.idea": true,
+        "**/.vs": true
+    },
+    "files.associations": {
+        "*.mm": "xml",
+        "*.sublime-*": "json",
+        "*.mjs": "javascript",
+        ".sequelizerc": "javascript",
+        "composer.lock": "json",
+        "*.cnf": "apacheconf",
+        "env-example": "dotenv",
+        "Dockerfile-*": "dockerfile"
+    },
+    // "http.proxy": "http://127.0.0.1:7777",
+    "extensions.autoUpdate": true,
+    "window.title": "${rootName}${separator}${activeEditorMedium}",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.iconTheme": "seti",
+    "git.autorefresh": false,
+    "git.countBadge": "off",
+    "terminal.external.windowsExec": "pwsh.exe",
+    "terminal.integrated.shell.windows": "pwsh.exe",
+    "terminal.integrated.shellArgs.windows": [
+        "-NoLogo"
+    ],
+    // "terminal.integrated.fontSize": 16,
+    // "launch": {
+    //     "version": "0.2.0",
+    //     "configurations": [
+    //         {
+    //             "type": "node",
+    //             "request": "launch",
+    //             "name": "Launch Program",
+    //             "program": "${file}"
+    //         }
+    //     ]
+    // },
+    "emmet.extensionsPath": "c:\\Users\\yan\\emmet",
+    // "emmet.preferences": {
+    //     "css.autoInsertVendorPrefixes": false
+    // },
+    /**
+     * typescript
+     */
+    // "javascript.validate.enable": false,
+    "typescript.autoImportSuggestions.enabled": false,
+    /**
+     * languages
+     */
+    "html.format.extraLiners": "",
+    // "css.colorDecorators.enable": false,
+    // "scss.colorDecorators.enable": false,
+    // "less.colorDecorators.enable": false,
+    "eslint.run": "onSave",
+    "tslint.run": "onSave",
+    "[html]": {
+        "editor.tabSize": 2
+    },
+    "[xml]": {
+        "editor.tabSize": 2
+    },
+    "[css]": {
+        "editor.tabSize": 2
+    },
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+    "[json]": {
+        "editor.tabSize": 2
+    },
+    "[typescript]": {
+        "editor.tabSize": 2
+    },
+    "php.suggest.basic": false,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=120",
+    ],
+    "python.unitTest.debugPort": 9000,
+    "python.venvPath": "F:\\Python\\.virtualenvs",
+    "powershell.integratedConsole.showOnStartup": false,
+    "powershell.powerShellExePath": "C:\\Program Files\\PowerShell\\6.0.1\\pwsh.exe",
+    "[powershell]": {
+        "editor.codeLens": false
+    },
+    "[shellscript]": {
+        "editor.tabSize": 2
+    },
+    // "beautify.options": {
+    //     "indent_size": 2
+    // },
+    "sassFormat.indent": 2,
+    "my.totalcmd": "TOTALCMD64.EXE",
+    "my.conemu": "ConEmu64",
+    "my.conemuArgs": [
+        "-Single",
+        "-run",
+        "{cmd}"
+    ],
+    "extensions.ignoreRecommendations": false
+}
